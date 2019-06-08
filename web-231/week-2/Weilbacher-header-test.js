@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  header.js
+; Title:  Weilbacher-header.js
 ; Author: Professor Krasso
 ; Date:   08 June 2019
 ; Modified By: Andrew Weilbacher
@@ -8,10 +8,6 @@
 ;===========================================
 */
 
-/**
-* Params: firstName, lastName, assignment
-* Response: output
-* Description: Returns a well-formatted string header
-*/
+const header = require('./Weilbacher-header.js');
 
-const header = require('../Weilbacher-header.js');
+console.log(header.display("Andrew", "Weilbacher", "Week 2"));
