@@ -4,7 +4,7 @@
 ; Title:  Weilbacher-Exercise-2.3.js
 ; Author: Andrew Weilbacher
 ; Date:   08 June 2019
-; Description: Displays a formatted header
+; Description: Displays a formatted header and example function for assignment
 ;===========================================
 */
 
