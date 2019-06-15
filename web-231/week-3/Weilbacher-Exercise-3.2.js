@@ -63,12 +63,15 @@
   }
 
 // Output from the match() function
+  // logs message for required output
+  console.log("// output from the match() function");
   // Test strings in match function for true or false values
   console.log(match("A","B"));
   console.log(match(2,2));
 
-// Conditions if...else statements. Include checks for all six (6) test variables
-
+// Conditions if...else statements. Include checks for all six (6) test
+  // logs message for required output
+  console.log("// output from the if...else blocks");
   // test testVar1 and testVar2
     // enter testVar1 and testVar2 into match function to evaluate
     if (match(testVar1, testVar2)) {
