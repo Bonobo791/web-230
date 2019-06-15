@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Weilbacher-Exercise-3.4.js
+; Title:  Weilbacher-Assignment-3.4.js
 ; Author: Andrew Weilbacher
 ; Date:   15 June 2019
 ; Description: Displays a formatted header and example function for assignment
