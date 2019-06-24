@@ -44,26 +44,6 @@ console.log(header.display("Andrew", "Weilbacher", "Assignment 4.4"));
 // create variable with states array
 var States = ["Alabama", "Nebraska", "Iowa", "California", "Nevada"];
 
-// functions
-
-  // Match Value Function
-  function get_value(arr, val) {
-    // for loop iteration over array
-    for (var k = 0; k < arr.length; k++) {
-      // check if value matches item in array
-      if (arr[k] === val) {
-        // return val if matched
-        return val;
-      }
-    }
-
-    // run filter over arr if true
-    var get_value_filtered = arr.filter(get_value);
-    // console log filtered value
-    console.log(get_value_filtered);
-  }
-
-
 // Output
 
 // All array items
@@ -86,13 +66,22 @@ var States = ["Alabama", "Nebraska", "Iowa", "California", "Nevada"];
     States.sort();
     console.log(States[x]);
   }
+
 // Selected value
   // new line
     // space in output
     console.log("");
     // message in output
     console.log("-- SELECTED VALUE --");
-    // run getValue function for vehicles and match Iowa
-    console.log(get_value(States, "Iowa"));
+    // create predicate
+    function get_value(x,i) {
+      return i
+    }
+    // create filter
+    filteredStates = States.filter(get_value);
+    // log filter results
+    console.log(filteredStates[1]);
 
 // end program
+
+
