@@ -74,13 +74,13 @@ var States = ["Alabama", "Nebraska", "Iowa", "California", "Nevada"];
     // message in output
     console.log("-- SELECTED VALUE --");
     // create predicate
-    function get_value(x,i) {
-      return i
+    function get_value(x,val) {
+      return x === val
     }
     // create filter
-    filteredStates = States.filter(get_value);
+    var filteredStates = States.filter(function(x) {return get_value(x, "Iowa")});
     // log filter results
-    console.log(filteredStates[1]);
+    console.log(filteredStates[0]);
 
 // end program
 
