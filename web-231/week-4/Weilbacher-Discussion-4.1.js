@@ -25,11 +25,11 @@ console.log(header.display("Andrew", "Weilbacher", "Discussion 4.1"));
     5
 
 */
-
+// create fruits array
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// show last item
 var x = fruits.pop();      // the value of x is "Mango"
 console.log(x);
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// add new item
 var y = fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
 console.log(y);
