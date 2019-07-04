@@ -43,4 +43,11 @@ var book = {
 };
 console.log(book);
 
+// example of object with two accessible properties
+function Sandwich(meat, cheese, bread) {
+  this.meat = ham;
+  this.cheese = manchego;
+  this.bread = rye;
+}
+
 // end program
