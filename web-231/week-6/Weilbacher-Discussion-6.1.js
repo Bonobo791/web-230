@@ -1,4 +1,4 @@
-6/*
+/*
 ============================================
 ; Title:  Weilbacher-Discussion-5.1.js
 ; Author: David Flanagan

@@ -26,9 +26,9 @@ console.log(header.display("Andrew", "Weilbacher", "Discussion 5.1"));
 
 // start program
 // set variable with mapping
-var foods = new Map();
+foods = new Map();
 // set keyvalue pairs
-foods.set('breakfast', 'eggs');
+foods('breakfast', 'eggs');
 foods.set('lunch', 'tacos');
 foods.set('dinner', 'nachos');
 
