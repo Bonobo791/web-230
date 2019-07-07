@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Weilbacher-Discussion-5.1.js
+; Title:  Weilbacher-Discussion-6.1.js
 ; Author: David Flanagan
 ; Contributor: Andrew Weilbacher
 ; Contributor:
