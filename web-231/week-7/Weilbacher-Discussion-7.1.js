@@ -13,16 +13,6 @@ const header = require('./Weilbacher-header.js');
 
 console.log(header.display("Andrew", "Weilbacher", "Discussion 7.1"));
 
-/*
-    Expected output:
-
-    Andrew Weilbacher
-    Discussion 7.1
-    Today's Date
-    
-
-*/
-
 // start program
 
 <script>
