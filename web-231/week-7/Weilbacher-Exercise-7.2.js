@@ -26,6 +26,7 @@ console.log(header.display("Andrew", "Weilbacher", "Exercise 7.2"));
 
 // start program
 
+// create constructor function
 function Employee(id,firstName,lastName,title) {
 
   this.id = id;
@@ -35,6 +36,7 @@ function Employee(id,firstName,lastName,title) {
 
 }
 
+// create array variable with constructor function values
 var Employees = [
 
   new Employee("1", "Thomas", "Edison", "Software Engineer"),
@@ -45,6 +47,7 @@ var Employees = [
 
 ];
 
+// interate through array variable
 for (var x = 0; x < Employees.length; x++) {
   console.log(Employees[x].id + " " + Employees[x].firstName + " " + Employees[x].lastName + " " + Employees[x].title);
 }
