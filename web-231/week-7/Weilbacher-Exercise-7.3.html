@@ -1,0 +1,71 @@
+<!--
+============================================
+; Title:  Weilbacher-Exercise-7.3.js
+; Author: Andrew Weilbacher
+; Date:   13 July 2019
+; Description: Displays a formatted header and example document write
+;===========================================
+*/ -->
+
+<!-- header -->
+<!-- const header = require('./Weilbacher-header.js'); -->
+
+<!-- console.log(header.display("Andrew", "Weilbacher", "Exercise 7.3")); -->
+
+<!-- HTML doc -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="C:\Users\aweilbacher\Documents\Bellevue\web-231\web-231\week-7\Weilbacher-Exercise-7.3.css">
+</head>
+<body>
+  <div>
+  <h1>Shopping List v.1</h1>
+    <ol>Oranges</ol>
+    <ol>Apples</ol>
+    <ol>Pears</ol>
+    <ol>Limes</ol>
+    <ol>Lemons</ol>
+  </div>
+  <div id="list2">
+    <script>
+      document.getElementById('list2').innerHTML = "<h1>Shopping List v.2</h1>" + 
+        "<table>" +
+        "<thead>" +
+        "<tr>" +
+        "<th>Id</th>" +
+        "<th>Item</th>" +
+        "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+        "<tr>" +
+        "<td>1</td>" +
+        "<td>Oranges</td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td>2</td>" +
+        "<td>Apples</td>" + 
+        "</tr>" +
+        "<tr>" +
+        "<td>3</td>" +
+        "<td>Pears</td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td>4</td>" +
+        "<td>Limes</td>" +
+        "</tr>" +
+        "<tr>" +
+        "<td>5</td>" +
+        "<td>Lemons</td>" +
+        "</tr>"
+        "</tbody>" +
+        "</table>"
+    </script>
+  </div>
+</body>
+</html>

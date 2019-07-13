@@ -29,7 +29,7 @@ console.log(header.display("Andrew", "Weilbacher", "Discussion 7.1"));
   "<table>" +
     "<thread>" +
       "<tr>" +
-        <th>List Item(s)</th> +
+        "<th>List Item(s)</th>" +
       "</tr>" +
     "</thread>" +
       "<tbody>" +
