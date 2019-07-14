@@ -1,0 +1,15 @@
+#blue {
+    background-color: blue;
+}
+
+#lightblue {
+    background-color: lightblue;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+table, th, td {
+    border: 1px solid white;
+  }
