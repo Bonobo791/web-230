@@ -1,44 +1,29 @@
-/*
+<!--
 ============================================
-; Title:  Weilbacher-Discussion-7.1.js
-; Author: Andrew Weilbacher
-; Contributor:
-; Date: 11 July 2019
-; Description: Displays a formatted header and output of example JS document write.
+; Title:  Discussion 7.1
+; Author: Thip Rattanavilay
+; Date:   11 July 2019
+; Description: Program with two (2) errors
 ;===========================================
-*/
+-->
 
-// header
-const header = require('./Weilbacher-header.js');
+<!DOCTYPE html>
+<html lang="en">
+  <title>Today's date</title>
 
-console.log(header.display("Andrew", "Weilbacher", "Discussion 7.1"));
 
-// start program
+<time id="date"></time>
 
 <script>
-  document.write(<h1>Hello World!</h1>)
+  /*
+  Create a JavaScript Date object for the current date and time,
+  then extract the desired parts, then join them again in the desired format.
+  */
+  var currentDate = new Date(),
+      month = currentDate.getMonth() + 1,
+      day = currentDate.getDate(),
+      year = currentDate.getFullYear(),
+      date = month + "/" + day + "/" + year;
+  // Output the date to the above HTML element
+  document.getElementById("date").innerHTML = date;
 </script>
-
-<h1 id="bar"></h1>
-<script>
-  document.getElementById('bar').innerHTML = "Behold, My To-Do List!";
-</script>
-<div id="todo"></div>
-<script>
-  document.getElementById('todo').innerHTML "<h1>TODO LIST</h1>" +
-  "<table>" +
-    "<thread>" +
-      "<tr>" +
-        "<th>List Item(s)</th>" +
-      "</tr>" +
-    "</thread>" +
-      "<tbody>" +
-        "<tr><td>Do Homework for Javascript Class</td></tr>" +
-        "<tr><td>Do Math Work</td></tr> +
-        "<tr><td>Study Spanish</td></tr>" +
-        "<tr><td>Suffer Through More Episodes of Game of Thrones</td></tr>" +
-      "</tbody>" +
-  "</table>"
-</script>
-
-// end program

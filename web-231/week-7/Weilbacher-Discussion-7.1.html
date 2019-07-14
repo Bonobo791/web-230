@@ -1,4 +1,4 @@
-/*
+<!-- /*
 ============================================
 ; Title:  Weilbacher-Discussion-7.1.js
 ; Author: Andrew Weilbacher
@@ -13,18 +13,18 @@ const header = require('./Weilbacher-header.js');
 
 console.log(header.display("Andrew", "Weilbacher", "Discussion 7.1"));
 
-// start program
-
-<script>
-  document.write(<h1>Hello World!</h1>)
-</script>
+-->
+<!DOCTYPE html>
+<html lang="en">
 
 <h1 id="bar"></h1>
 <script>
+  // create H1 with getElement
   document.getElementById('bar').innerHTML = "Behold, My To-Do List!";
 </script>
 <div id="todo"></div>
 <script>
+  // create inner table with getElement
   document.getElementById('todo').innerHTML "<h1>TODO LIST</h1>" +
   "<table>" +
     "<thread>" +
@@ -40,5 +40,4 @@ console.log(header.display("Andrew", "Weilbacher", "Discussion 7.1"));
       "</tbody>" +
   "</table>"
 </script>
-
-// end program
+</html>
