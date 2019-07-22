@@ -1,0 +1,138 @@
+<!--
+============================================
+; Title:  Weilbacher-Exercise-8.3.js
+; Author: Andrew Weilbacher
+; Date:   19 July 2019
+; Description: Displays a formatted header and example dynamic HTML
+;===========================================
+*/ -->
+
+<!-- header -->
+<!-- const header = require('./Weilbacher-header.js'); -->
+
+<!-- console.log(header.display("Andrew", "Weilbacher", "Exercise 8.3")); -->
+
+<!-- HTML doc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8.3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+        .color1 {
+            background-color: blue;
+        }
+        .color2 {
+            background-color: yellow;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            margin-left: 20px;
+        }
+        #h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #button {
+            margin-left: 20px;
+        }
+        table {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin-left: 20px;
+        }
+        #top-bar {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+        }
+        #top-bar li {
+          float: left;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+        }
+        #top-bar li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+        }
+        #top-bar li a:hover {
+          background-color: #111;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+        }
+    </style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button").click(function(){
+            $("#h1").toggle();
+        });
+        $( ".fruitID" ).click(function() {
+            event.preventDefault();
+            var fruitID = $(this).text();
+            var fruitType = $(this).closest("td").next().text();
+            alert("Fruit ID: " + fruitID + " Fruit Type: " + fruitType);
+        });
+    });
+</script>
+</head>
+<ul id="top-bar">
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
+<body>
+    <h1 id="h1">Lorem Ipsum</h1>
+    <button id="button" type="button">
+        Toggle
+    </button>
+    <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet consectetur metus, 
+            vel vulputate ante tristique eget. Sed id mi non urna pellentesque porta id eu lacus. Curabitur et vestibulum lacus. 
+            Fusce pharetra posuere justo, blandit vestibulum sem posuere vitae. Nullam eu accumsan arcu. Nunc iaculis porta facilisis. 
+            Maecenas eget leo at nulla lobortis commodo. Suspendisse ultrices sollicitudin tellus. Quisque suscipit sem in felis mattis, 
+            a mattis odio vehicula. Nam et risus nisi. In a nisl eget metus accumsan aliquet. Maecenas mattis ligula quis est consequat, 
+            id volutpat tortor mattis.
+    </p>
+    <table>
+            <tr class="color1">
+                <th>ID</th>
+                <th>Type</th> 
+              </tr>
+            <tr class="color2">
+                <td><a href="#" class="fruitID">1</a></td>
+                <td class="fruitType">Apple</td>
+            </tr>
+            <tr class="color1">
+                <td><a href="#" class="fruitID">2</a></td>
+                <td class="fruitType">Orange</td>
+            </tr>
+            <tr class="color2">
+                <td><a href="#" class="fruitID">3</a></td>
+                <td class="fruitType">Watermelon</td>
+            </tr>
+            <tr class="color1">
+                <td><a href="#" class="fruitID">4</a></td>
+                <td class="fruitType">Grapes</td>
+            </tr>
+            <tr class="color2">
+                <td><a href="#" class="fruitID">5</a></td>
+                <td class="fruitType">Kiwi</td>
+            </tr>
+        </table>
+</body>
+</html>
