@@ -1,0 +1,30 @@
+<!--
+; Title: Exercise 8.1
+; Author: Thip Rattanavilay
+; Contributor: Andrew Weilbacher
+; Date: 17 July 2019
+; Description: Demonstrates HTML page with two jQuery errors
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>rattanavilay-discussion 8.1</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- ***Changed cript to script -->
+<script type="text/javascript">
+$(document).ready(function(){
+    // Highlight element with id mark
+    // *** Changed mark to Mark in order to target the <p> id
+    $("#Mark").css("background", "yellow");
+});
+// ***Changed cript to script
+</script>
+</head>
+<body>
+    <p id="Mark">Welcome to Thip Rattanavilay website.</p>
+    <p>What is jQuery?</p>
+    <p>The purpose of jQuery is to make it much easier to use JavaScript on your website..</p>
+</body>
+</html>

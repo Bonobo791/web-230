@@ -1,0 +1,38 @@
+<!--
+  ============================================
+  ; Title:  librandi-discussion-8.1.html
+  ; Author: Tyler Librandi
+  ; Date:   17 July 2019
+  ; Description: A document that demonstrates DOM manipulation with jQuery
+  ;===========================================
+  -->
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        // *** Changed the = to . in order to use the method of click
+        $("button").click(function(){
+          // *** Changed H2 to H1 in order to hide the H1 heading
+          $("h1").hide();
+        });
+      };
+      </script>
+    </head>
+    <body>
+      <h1>This is an h1 heading. Hide me.</h1>
+      <h2>This is an h2 heading.</h2>
+      <h3>This is an h3 heading</h3>
+      <p>This is a paragraph.</p>
+      <button>Click me to hide the h1 heading.</button>
+    </body>
+  </html>
+  <!--
+  Expected output once button is clicked:
+  This is an h2 heading.
+  This is an h3 heading
+  This is a paragraph.
+  Click me to hide the h1 heading.
+  -->
