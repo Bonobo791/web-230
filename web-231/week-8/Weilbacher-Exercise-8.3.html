@@ -76,19 +76,28 @@
     </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+    // create toggle code to hide or show H1
     $(document).ready(function(){
+        // click method on button ID in order to register event
         $("#button").click(function(){
+            // toogle method to hide or show H1 when clicked
             $("#h1").toggle();
         });
+        // create click event to show alert
         $( ".fruitID" ).click(function() {
+            // prevent default values
             event.preventDefault();
+            // create variable to target fruitID
             var fruitID = $(this).text();
+            // create variable to target last td for fruitType
             var fruitType = $(this).closest("td").next().text();
+            // show ID and Type in an alert box when ID link is pressed
             alert("Fruit ID: " + fruitID + " Fruit Type: " + fruitType);
         });
     });
 </script>
 </head>
+<!-- create top bar -->
 <ul id="top-bar">
         <li><a href="default.asp">Home</a></li>
         <li><a href="news.asp">News</a></li>
@@ -97,9 +106,11 @@
     </ul>
 <body>
     <h1 id="h1">Lorem Ipsum</h1>
+    <!-- create button -->
     <button id="button" type="button">
         Toggle
     </button>
+    <!-- create paragraph -->
     <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet consectetur metus, 
             vel vulputate ante tristique eget. Sed id mi non urna pellentesque porta id eu lacus. Curabitur et vestibulum lacus. 
@@ -108,7 +119,9 @@
             a mattis odio vehicula. Nam et risus nisi. In a nisl eget metus accumsan aliquet. Maecenas mattis ligula quis est consequat, 
             id volutpat tortor mattis.
     </p>
+    <!-- create table -->
     <table>
+        <!-- use classes to define CSS for rows and create classes to define fruitType or fruitID -->
             <tr class="color1">
                 <th>ID</th>
                 <th>Type</th> 
