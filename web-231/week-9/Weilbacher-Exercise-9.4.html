@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sample JS to Add two numbers</title>   
+    <script>
+      var input = document.querySelectorAll('input');
+      var label = document.querySelector('p');
+      var button = document.querySelector('button');
+      button.addEventListener('click', onClick);
+      function onClick() {
+        var num1 = input[0].value;
+        var num2 = input[1].value;
+        var sum = num1 + num2;
+        label.textContent = num1 + ' + ' + num2 + ' = ' + sum;
+      }
+    </script>
+    
+  </head>
+  <body>
+    <h1>Add two numbers</h1>
+    <label for="num1">Number 1</label>
+    <input id="num1">
+    <label for="num2">Number 2</label>
+    <input id="num2">
+    <button>Add</button>
+    <p></p>
+  </body>
+</html>
